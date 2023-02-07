@@ -1,4 +1,4 @@
-package com.rashiq_tech.weathergenie
+package com.rashiq_tech.weathergenie.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -8,7 +8,7 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
-import com.rashiq_tech.weathergenie.ui.main.MainFragment
+import com.rashiq_tech.weathergenie.R
 
 class MainActivity : AppCompatActivity() {
 

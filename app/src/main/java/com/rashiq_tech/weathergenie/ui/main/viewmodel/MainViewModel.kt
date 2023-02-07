@@ -1,4 +1,4 @@
-package com.rashiq_tech.weathergenie.ui.main
+package com.rashiq_tech.weathergenie.ui.main.viewmodel
 
 import androidx.lifecycle.ViewModel
 

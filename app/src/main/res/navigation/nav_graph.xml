@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.rashiq_tech.weathergenie.ui.main.MainFragment"
+        android:name="com.rashiq_tech.weathergenie.ui.main.views.MainFragment"
         android:label="WeatherGenie"
         tools:layout="@layout/fragment_main" />
 
