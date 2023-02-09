@@ -18,6 +18,8 @@ class MainViewModel @Inject constructor(private val mainRepository: MainReposito
 
     val weatherInfoState: MutableLiveData<ApiState<WeatherInfo>> = MutableLiveData()
 
+    val cityList: MutableLiveData<List<String>> = MutableLiveData()
+
     fun getWeatherAgainstCity(cityName: String) {
         weatherInfoState.postValue(ApiState.Loading())
         viewModelScope.launch {
@@ -33,6 +35,12 @@ class MainViewModel @Inject constructor(private val mainRepository: MainReposito
                 }
             }
         }
+    }
+
+    fun getCityList(){
+        cityList.postValue(arrayListOf("Yakutsk", "Las Vegas", "Cairo", "Delhi", "London", "Dubai", "Bangkok", "Glasgow", "Paris", "Qatar",
+        "Tokyo", "Shanghai", "Sao Paulo", "Mexico City", "Cairo", "Dhaka", "Mumbai", "Beijing", "Osaka",
+        "Moscow"))
     }
 
 }
