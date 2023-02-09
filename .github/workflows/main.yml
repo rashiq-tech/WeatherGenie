@@ -1,0 +1,20 @@
+name : WeatherGenieAppCI
+on : 
+  push : 
+   branches : [master]
+  pull_request :
+   branches : [master]
+   
+jobs :
+  build :
+   runs-on : ubuntu-latest
+   steps : 
+    - name: Checkout
+      uses: actions/checkout@v3.3.0
+    - name : Build the Gradle
+      run :  ./gradlew build
+    - name : Upload APK
+      uses : actions/upload-artifact@v3.1.2
+      with :
+        name : weather_genie_app
+        path : app/build/outputs/apk/debug/app-debug.apk
