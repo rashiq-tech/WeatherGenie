@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">WeatherGenie</string>
+
+    <string name="default_degree_value">0&#xb0;</string>
+
+
+    <string name="placeholder_degree">%s&#xb0;</string>
+
+
+    <string name="label_feels_like">Feels-like</string>
+    <string name="label_city_name">City Name</string>
+    <string name="label_min">Min</string>
+    <string name="label_max">Max</string>
 </resources>
